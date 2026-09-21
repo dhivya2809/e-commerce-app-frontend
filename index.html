@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopcart - Shopping and Department Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar bg-light text-dark py-2 px-3">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Left: Phone Number -->
+      <div class="col-4 d-flex justify-content-start">
+        <span><i class="fas fa-phone-alt me-2"></i> +91 1234567890</span>
+      </div>
+
+      <!-- Center: Offer -->
+      <div class="col-4 d-flex justify-content-center">
+        <span class="fw-semibold"> Get 10% Off on Selected Items</span>
+      </div>
+
+      <!-- Right: Language and Location -->
+      <div class="col-4 d-flex justify-content-end gap-3">
+        <div><i class="fas fa-globe me-1"></i> EN</div>
+        <div><i class="fas fa-map-marker-alt me-1"></i> India</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <div class="container">
+    <div class="row w-100 align-items-center">
+
+      <!-- Left: Logo -->
+      <div class="col-3 d-flex align-items-center">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="logo2.jpg" alt="Logo" height="40" />
+          <span class="ms-2 text-white">Shopcart</span>
+        </a>
+      </div>
+
+      <!-- Center: Navigation -->
+      <div class="col-6">
+        <ul class="navbar-nav justify-content-center d-flex flex-row gap-4">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+              <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+              <li><a class="dropdown-item" href="#">Beverages</a></li>
+              <li><a class="dropdown-item" href="#">Snacks</a></li>
+              <li><a class="dropdown-item" href="#">Dairy</a></li>
+              <li><a class="dropdown-item" href="#">Household Items</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Deals</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">What's New</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Delivery</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Account & Cart with Icons -->
+      <div class="col-3 d-flex justify-content-end">
+        <ul class="navbar-nav flex-row gap-3">
+          <li class="nav-item">
+            <a class="nav-link text-white d-flex align-items-center" href="#">
+              <i class="fas fa-user me-1"></i> Account
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white d-flex align-items-center" href="#">
+              <i class="fas fa-shopping-cart me-1"></i> Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Banner -->
+<section class="main-banner my-4 position-relative">
+  <img src="banner2.jpg" alt="Hero Banner" class="img-fluid w-100 banner-img" />
+
+  <div class="banner-text text-white">
+    <h1 class="fw-bold">Online Department Store</h1>
+    <p class="lead">Shopping is a bit of a relaxing for me which is something troubling for a bank balance.</p>
+    <a href="#" class="btn btn-primary mt-3">Learn More</a>
+  </div>
+</section>
+  <!-- Top Categories -->
+  <section class="container my-5 px-3">
+
+    <h4 class="section-heading">Shop Our Top Categories</h4>
+    <div class="row g-3">
+      <div class="col-md-2" data-category>
+        <div class="category-card text-center py-4">
+          <img src="jewellery.jpg" alt="Furniture" />
+          <div>Rings</div>
+        </div>
+      </div>
+      <div class="col-md-2" data-category>
+        <div class="category-card  text-center py-4">
+          <img src="bags.jpg" alt="Hand Bag" />
+          <div>Hand Bag</div>
+        </div>
+      </div>
+      <div class="col-md-2" data-category>
+        <div class="category-card text-center py-4">
+          <img src="utensils.jpg" alt="Books" />
+          <div>Spoons</div>
+        </div>
+      </div>
+      <div class="col-md-2" data-category>
+        <div class="category-card text-center py-4">
+          <img src="WATCH.jpg" alt="Tech" />
+          <div>Watch</div>
+        </div>
+      </div>
+      <div class="col-md-2" data-category>
+        <div class="category-card text-center py-4 ">
+          <img src="womens sandals.jpg" alt="Sneakers" />
+          <div>Sandals</div>
+        </div>
+      </div>
+      <div class="col-md-2" data-category>
+        <div class="category-card text-center py-4">
+          <img src="slings.jpg" alt="Travel" />
+          <div>Slings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Deals -->
+  <section class="container ">
+    <h4 class="section-heading"><b>Today's Best Deals For You!</b></h4>
+    <div class="row g-4">
+       <div class="col-md-3">
+        <div class="deal-card p-2 ms-4 mx-3">
+          <img src="homepod.jpg" style="width: 250px;" alt="Instax Mini 9" >
+           <div class="d-flex justify-content-between align-items-center mt-2">
+          <h4 class="mb-0">Home pod</h4>
+          <span class="text-success fw-bold">₹2,499</span>
+        </div>
+          <p><h6>color : black(2left)</h6></p>
+          <p class="star text-success">★★★★ 4/5</p>
+          <button class="btn btn-outline-dark btn-sm bg-primary text-white">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="col-md-3">
+        <div class="deal-card p-2 ms-4 mx-3">
+          <img src="instax mini.jpg"   style="width: 250px;"    alt="Instax Mini 9" >
+         <div class="d-flex justify-content-between align-items-center mt-2">
+          <h4 class="mb-0">Instax mini 9</h4>
+          <span class="text-success fw-bold">₹6,899</span>
+        </div>
+          <p><h6>color : purple(hot selling)</h6></p>
+          <p class="star1 text-success">★★★★★ 5/5</p>
+          <button class="btn btn-outline-dark btn-sm bg-primary text-white">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="deal-card p-2 ms-4 mx-3">
+          <img src="base camp duffel.jpg"  style="width: 250px;" alt="Base Camp Duffel M" >
+         <div class="d-flex justify-content-between align-items-center mt-2">
+          <h4 class="mb-0">Base camp Duffel</h4>
+          <span class="text-success fw-bold">₹999</span>
+        </div>
+         <p><h6>color : Yelllow(colours available)</h6></p>
+          <p class="star2 text-success">★★★★ 4/5</p>
+          <button class="btn btn-outline-dark btn-sm bg-primary text-white">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="deal-card p-2 ms-4 mx-3">
+          <img src="tode2.jpg" style="width: 250px;" alt="Tote Medium" >
+          <div class="d-flex justify-content-between align-items-center mt-2">
+          <h4 class="mb-0">Tode medium</h4>
+          <span class="text-success fw-bold">₹1,999</span>
+        </div>
+          <p><h6c class="bag">color :sandle(5 left)</h6></p>
+          <p class="star text-success">★★★★★ 5/5</p>
+          <button class="btn btn-outline-dark btn-sm bg-primary text-white">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+ 
+  <!-- brands section -->
+  <section class="container my-5">
+    <h4><b>Choose By Brand</b></h4>
+    <div class="row g-3 mt-3">
+      
+      <!-- Brand Card -->
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card">
+          <img src="staples.jpg" alt="Staples">
+          <div class="brand-name">Staples</div>
+          <div class="brand-subtext">Delivery within 24 hours</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card active">
+          <img src="sprouts logo.jpg" alt="Sprouts">
+          <div class="brand-name">Sprouts</div>
+          <div class="brand-subtext">Delivery within 24 hours</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card">
+          <img src="Grocery-Outlet logo.jpg" alt="Grocery outlet">
+          <div class="brand-name">Grocery outlet</div>
+          <div class="brand-subtext">Delivery within 24 hours</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card">
+          <img src="LENOVA.jpg" alt="Mollie stones">
+          <div class="brand-name">Lenova</div>
+          <div class="brand-subtext">Delivery within 24 hours</div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card">
+          <img src="max logo.jpg" alt="Sports Basement">
+          <div class="brand-name">Max</div>
+          <div class="brand-subtext ">free shipping</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card">
+          <img src="titan logo.jpg" alt="Container Store">
+          <div class="brand-name">Titan</div>
+          <div class="brand-subtext">Fast delivary available</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card">
+          <img src="hp brand.jpg" alt="Target">
+          <div class="brand-name">HP</div>
+          <div class="brand-subtext">Delivery within 24 hours</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="brand-card">
+          <img src="crocks.jpg" alt="Bevmo!">
+          <div class="brand-name">Crocks</div>
+          <div class="brand-subtext">No delivery charges</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+   <section>
+      <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container-fluid">
+          <div class="row text-start">
+            <div class="col-md-3 mb-1">
+              <h5 class="fw-bold mb-3 ms-4 ">Address</h5>
+              <div class="divya">
+                <p><i class="bi bi-geo-alt-fill text-success me-2 ms-4"></i> Bathrakalliyamman kovil street,</p>
+                <p class="subline ms-4"> Nattukal area,Cumbum theni dt</p>
+                <p><i class="bi bi-telephone-fill text-success me-2 ms-4"></i> +91 9344575373, 6382 657791</p>
+                <p><i class="bi bi-envelope-fill text-success me-2 ms-4"></i> dhivyaramesh1234@gmail.com</p>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="#" class="btn btn-outline-light btn-sm ms ms-4"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="btn btn-outline-light btn-sm"><i class="bi bi-youtube"></i></a>
+                  <a href="#" class="btn btn-outline-light btn-sm"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="btn btn-outline-light btn-sm"><i class="bi bi-google"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5 class="fw-bold mb-3">Categories</h5>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Computers</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Mobile phones</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Kids dresses</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Dressing Table</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Home decor products</li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5 class="fw-bold mb-3">Quick Links</h5>
+              <ul class="list-unstyled ">
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Home</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>About Us</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Our Products</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Customer Reviews</li>
+                <li><i class="bi bi-chevron-right text-success me-2"></i>Help Line</li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5 class="fw-bold mb-3">Newsletter</h5>
+              <p> Discover Exclusive Offers Await in Our Newsletter Today! Don’t Miss Out!</p>
+              <div class="input-group mt-5">
+                <input type="email" class="form-control" placeholder="Your email">
+                <button class="btn btn-success">SignUp</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
